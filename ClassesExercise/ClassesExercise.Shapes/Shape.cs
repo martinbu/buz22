@@ -1,22 +1,39 @@
 ﻿namespace ClassesExercise.Shapes
 {
-    public class Shape
+
+    public interface Shape
     {
-        public Position Position { get; set; }
+        Position Position { get; set; }
+        double CalculateArea();
+        void Draw();
+    }
 
-        public Shape(double x, double y)
-        {
-            Position = new Position(x, y);
-        }
+    //public abstract class Shape
+    //{
+    //    public Position Position { get; set; }
 
-        public virtual double CalculateArea()
+    //    public Shape(double x, double y)
+    //    {
+    //        Position = new Position(x, y);
+    //    }
+
+    //    public abstract double CalculateArea();
+    //    public abstract void Draw();
+    //}
+
+    public class Triangle : Shape
+    {
+        public Position Position { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
+
+        public double CalculateArea()
         {
-            return 0;
+            throw new NotImplementedException();
         }
 
         public void Draw()
         {
-            Console.WriteLine("Drawing {0}", nameof(Shape));
+            throw new NotImplementedException();
         }
     }
+
 }

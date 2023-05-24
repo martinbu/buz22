@@ -16,7 +16,7 @@
             return Width * Height;
         }
 
-        public new void Draw()
+        public override void Draw()
         {
             Console.WriteLine("Drawing {0}", nameof(Rectangle));
         }

@@ -14,7 +14,7 @@
             return Radius * Radius * Math.PI;
         }
 
-        public new void Draw()
+        public override void Draw()
         {
             Console.WriteLine("Drawing {0}", nameof(Circle));
         }
