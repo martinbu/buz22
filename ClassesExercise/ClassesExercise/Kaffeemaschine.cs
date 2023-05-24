@@ -8,6 +8,10 @@ namespace ClassesExercise
         public KaffeemaschinenFarbe Farbe { get; }
         public int Stärke { get; set; }
 
+        // Wenn static verwendet wird, dann wird diese Variable nur einmal initialisiert
+        // und für alle erzeugten Instanzen geteilt.
+        // Die Farbe hingegen (hat kein static keyword) wird nicht geteilt. Jedes Objekt
+        // hat seine eigene Farbe
         public static int AnzahlErzeugterKaffeemaschinen { get; private set; } = 0;
 
         // lange schreibweise
@@ -63,6 +67,13 @@ namespace ClassesExercise
 
         public int GetStärke()
         {
+            // this hat einen anderen Wert je nachdem auf welches
+            // Objekt die Methode aufgerufen wird
+            // Also z.b.
+            // this = roteMaschine (wenn roteMaschine.GetStärke())
+            // this = grüneMaschine (wenn grüneMaschine.GetStärke())
+            // this = grüneMaschine2 (wenn grüneMaschine2.GetStärke())
+
             return this.Stärke;
         }
 
