@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ClassesExercise.Shapes;
+using System;
 
 namespace ClassesExercise
 {
@@ -6,7 +7,35 @@ namespace ClassesExercise
     {
         static void Main(string[] args)
         {
-            RunKaffeemaschinenBeispiel();
+            RunShapesExample();
+            //RunKaffeemaschinenBeispiel();
+        }
+
+        static void RunShapesExample()
+        {
+            Shape shape = new Shape(0, 0);
+            Rectangle rectangle = new Rectangle(0, 0, 20, 50);
+            Square square = new Square(0, 0, 50);
+            Circle circle = new Circle(0, 0, 20);
+
+            Console.WriteLine("---------- {0} -----------", typeof(Shape));
+            shape.Draw();
+            Console.WriteLine("Shape Area: {0}", shape.CalculateArea());
+
+            Console.WriteLine();
+            Console.WriteLine("---------- {0} -----------", typeof(Rectangle));
+            rectangle.Draw();
+            Console.WriteLine("Rectangle Area: {0}", rectangle.CalculateArea());
+
+            Console.WriteLine();
+            Console.WriteLine("---------- {0} -----------", typeof(Square));
+            square.Draw();
+            Console.WriteLine("Square Area: {0}", square.CalculateArea());
+
+            Console.WriteLine();
+            Console.WriteLine("---------- {0} -----------", typeof(Circle));
+            circle.Draw();
+            Console.WriteLine("Circle Area: {0}", circle.CalculateArea());
         }
 
         static void RunKaffeemaschinenBeispiel()
