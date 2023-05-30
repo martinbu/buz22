@@ -5,7 +5,9 @@ VisualStudioVersion = 17.5.33627.172
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Buz.Banking", "Buz.Banking\Buz.Banking.csproj", "{528C09A7-0A54-4B2C-97AB-1C1F4E1A81B4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Buz.Banking.Console", "Buz.Banking.Console\Buz.Banking.Console.csproj", "{DF0938B3-E53F-4E86-A053-7A29C55ACC9C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Buz.Banking.Console", "Buz.Banking.Console\Buz.Banking.Console.csproj", "{DF0938B3-E53F-4E86-A053-7A29C55ACC9C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Buz.Banking.UI.Wpf", "Buz.Banking.UI.Wpf\Buz.Banking.UI.Wpf.csproj", "{D511FBDE-4646-41AA-AA23-EC19EBA08E06}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{DF0938B3-E53F-4E86-A053-7A29C55ACC9C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DF0938B3-E53F-4E86-A053-7A29C55ACC9C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DF0938B3-E53F-4E86-A053-7A29C55ACC9C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D511FBDE-4646-41AA-AA23-EC19EBA08E06}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D511FBDE-4646-41AA-AA23-EC19EBA08E06}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D511FBDE-4646-41AA-AA23-EC19EBA08E06}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D511FBDE-4646-41AA-AA23-EC19EBA08E06}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
