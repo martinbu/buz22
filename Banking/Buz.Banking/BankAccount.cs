@@ -102,5 +102,13 @@ namespace Buz.Banking
         {
             return $"Bank Account\n-------------\n\tOwner: {Owner}\n\tIBAN: {Number}\n\tBalance: {Balance:c2}";
         }
+
+        public IEnumerable<Transaction> GetTransactions(DateTime? from = null, DateTime? to = null)
+        {
+            from ??= DateTime.MinValue;
+            to ??= DateTime.MaxValue;
+
+            return _Transactions.Where(x => x.Date >= from && x.Date <= to);
+        }
     }
 }

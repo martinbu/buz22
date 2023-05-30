@@ -1,6 +1,6 @@
 ﻿namespace Buz.Banking
 {
-    internal class Transaction
+    public class Transaction
     {
         public Transaction(decimal amount, string note, DateTime time)
         {
