@@ -38,11 +38,11 @@
                       SelectedItem="{Binding SelectedBankAccount}"
                       MinWidth="200"
                       >
-                <ComboBox.ItemTemplate>
+                <!--<ComboBox.ItemTemplate>
                     <DataTemplate DataType="vm:AccountViewModel">
                         <TextBlock Text="{Binding Owner}" />
                     </DataTemplate>
-                </ComboBox.ItemTemplate>
+                </ComboBox.ItemTemplate>-->
 
                 <ComboBox.Style>
                     <Style TargetType="ComboBox">

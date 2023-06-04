@@ -106,5 +106,10 @@ namespace Buz.Banking.UI.Wpf.ViewModels
         }
 
         #endregion
+
+        public override string ToString()
+        {
+            return $"{Owner} - {AccountNumber}";
+        }
     }
 }
