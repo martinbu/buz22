@@ -1,0 +1,20 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<OutputType>Exe</OutputType>
+		<TargetFramework>net7.0</TargetFramework>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<Nullable>enable</Nullable>
+	</PropertyGroup>
+
+	<!-- a project can have only one file with top level statements -->
+	<!-- therefore remove the Program_*.cs explaining files from compilation -->
+	<ItemGroup>
+		<Compile Remove="Program_*.cs" />
+		<None Include="Program_*.cs" />
+	</ItemGroup>
+	<ItemGroup>
+	  <ProjectReference Include="..\Buz.Shapes\Buz.Shapes.csproj" />
+	</ItemGroup>
+
+</Project>
